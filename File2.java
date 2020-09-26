@@ -1,6 +1,6 @@
 public class File2{
 public static void main(String[] args){
-int INITIAL_POSITION=0;
-System.out.println("Initial position of player 1 is:"+INITIAL_POSITION);
+int rollDice=(int)(Math.random()*6)+1;
+System.out.println("Dice roll value:"+rollDice);
 }
 }
