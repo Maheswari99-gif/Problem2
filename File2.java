@@ -1,7 +1,8 @@
 public class File2{
 public static void main(String[] args){
-int rollDice=(int)(Math.random()*6)+1;
 int PLAYER_POSITION=0,option=0;
+do{
+int rollDice=(int)(Math.random()*6)+1;
 option=(int)(Math.random()*3);
 switch(option){
 case 1:
@@ -15,5 +16,9 @@ break;
 default:
 System.out.println("No Play"+PLAYER_POSITION);
 }
+if(PLAYER_POSITION<0)
+PLAYER_POSITION=0;
+}
+while(PLAYER_POSITION==100);
 }
 }
